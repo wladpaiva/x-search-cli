@@ -20,7 +20,7 @@
     "url": "git+https://github.com/wladpaiva/x-search-cli.git"
   },
   "bin": {
-    "x-search": "./dist/index.mjs"
+    "x-search": "dist/index.mjs"
   },
   "files": [
     "dist"
