@@ -1,0 +1,4 @@
+interface:
+  display_name: "x-search CLI"
+  short_description: "Work on the xAI X Search CLI"
+  default_prompt: "Use $x-search-cli to update or debug the x-search CLI."

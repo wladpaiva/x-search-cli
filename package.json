@@ -1,0 +1,59 @@
+{
+  "name": "x-search-cli",
+  "version": "0.1.0",
+  "description": "A small CLI for querying X through xAI X Search.",
+  "keywords": [
+    "ai-sdk",
+    "cli",
+    "grok",
+    "x-search",
+    "xai"
+  ],
+  "homepage": "https://github.com/wladpaiva/x-search-cli#readme",
+  "bugs": {
+    "url": "https://github.com/wladpaiva/x-search-cli/issues"
+  },
+  "license": "MIT",
+  "author": "Wlad Paiva",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wladpaiva/x-search-cli.git"
+  },
+  "bin": {
+    "x-search": "./dist/index.mjs"
+  },
+  "files": [
+    "dist"
+  ],
+  "type": "module",
+  "exports": {
+    ".": "./dist/index.mjs",
+    "./package.json": "./package.json"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "build": "vp pack",
+    "dev": "vp pack --watch",
+    "test": "vp test",
+    "check": "vp check",
+    "prepublishOnly": "vp run build"
+  },
+  "dependencies": {
+    "@ai-sdk/xai": "3.0.71",
+    "ai": "6.0.132",
+    "term-md": "1.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^25.6.2",
+    "@typescript/native-preview": "7.0.0-dev.20260509.2",
+    "bumpp": "^11.1.0",
+    "typescript": "^6.0.3",
+    "vite-plus": "^0.1.20"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "packageManager": "pnpm@11.1.2"
+}
